@@ -1,16 +1,22 @@
 # controller
+import window
 
 class Observer:
-	@abstactmethod
+
 	def update(self, *args, **kwargs):
+		# Verfügbare Befehle sind:
+		# - "add" + object
 		pass
 
 class Controller(Observer):
 	def __init__(self):
-		pass
+		self.window = window.Window()
 
 	def __del__(self):
 		pass
+
+	def run(self):
+		self.window.run()
 
 
 	def update(self, command, **kwargs):

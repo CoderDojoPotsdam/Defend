@@ -2,12 +2,14 @@
 # Defend
 #
 # a simple pvp game
-import sys
+import kivy
+kivy.require("1.9.2")
+import sys, controller
 
 
 def main(argv):
-	for i in argv:
-		print(i)
+	game = controller.Controller()
+	game.run()
 
 if __name__ == "__main__":
 	main(sys.argv)
