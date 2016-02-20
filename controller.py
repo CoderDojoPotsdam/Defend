@@ -1,11 +1,17 @@
 # controller
 
-class Controller:
+class Observer:
+	@abstactmethod
+	def update(self, *args, **kwargs):
+		pass
+
+class Controller(Observer):
 	def __init__(self):
 		pass
 
 	def __del__(self):
 		pass
+
 
 	def update(self, command, **kwargs):
 		# update something
