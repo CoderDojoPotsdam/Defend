@@ -1,20 +1,26 @@
-# Fensterverwaltung
-
-import kivy
 import kivy.app
-import kivy.uix.button
-from kivy.core.window import Window as win
+from kivy.uix.button import Button
+from kivy.core.window import Window
+from kivy.uix.floatlayout import  FloatLayout
 
-class Window(kivy.app.App):
-	# Fenster icon und Title
+size = (640, 480)
+
+class AppWindow(kivy.app.App):
+	#Icon und Title
 	icon = "icon.png"
 	title = "Defend"
 
+	def init(self):
+		self.root = FloatLayout()
 
+	# Fenster erstellen
 	def build(self):
-		# Fenster erstellen
-		win.size = (640, 480)
-		return kivy.uix.button.Button(text = "test", size_hint = (0.5, 0.25))
+		Window.size = size
 
-	def close(self):
-		win.close()
+	# Objekte hinzufügen
+	def add(self, new):
+		self.root.add_widget(new)
+
+	# Objekte entfernen
+	def remove(self, toRemove):
+		self.root.remove_widget(toRemove)	
