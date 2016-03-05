@@ -11,7 +11,7 @@ kivy.require("1.9.2")
 def main(argv):
 	game = controller.Controller()
 	mini = minion.Minion()
-	game.update("add", mini)
+	game.update("addFloppy", mini)
 	game.run()
 
 if __name__ == "__main__":

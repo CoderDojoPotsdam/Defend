@@ -29,10 +29,10 @@ class Controller(Observer):
 		# Beispiel: controller.update("minion", "goto", [0,4, 0,2])
 		if command[0] == "close":
 			self.window.close()
-		elif command[0] == "add":
+		elif command[0] == "addFloppy":
 			self.window.add(command[1].image)
+			self.minions.append(command[1])
 
 	def loop(self, dt):
 		for i in self.minions:
-			i.update()
-
+			i.update("move", [1, 0])
