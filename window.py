@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import kivy.app
-from kivy.uix.button import Button
 from kivy.core.window import Window
 from kivy.uix.floatlayout import  FloatLayout
 
