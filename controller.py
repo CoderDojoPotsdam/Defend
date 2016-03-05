@@ -30,7 +30,7 @@ class Controller(Observer):
 		if command[0] == "close":
 			self.window.close()
 		elif command[0] == "add":
-			self.window.add(command[1])
+			self.window.add(command[1].image)
 
 	def loop(self, dt):
 		for i in self.minions:
