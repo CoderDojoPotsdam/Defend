@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import kivy.app
 from kivy.uix.button import Button
 from kivy.core.window import Window
@@ -17,10 +18,10 @@ class AppWindow(kivy.app.App):
 	def build(self):
 		Window.size = size
 
-	# Objekte hinzufügen
+	# Objekte hinzuf�gen
 	def add(self, new):
 		self.root.add_widget(new)
 
 	# Objekte entfernen
 	def remove(self, toRemove):
-		self.root.remove_widget(toRemove)	
+		self.root.remove_widget(toRemove)
