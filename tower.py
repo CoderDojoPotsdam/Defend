@@ -1,2 +1,2 @@
 class Tower:
-	pass
+    pass
