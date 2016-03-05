@@ -1,3 +1,4 @@
 class Tower(object):
     def __init__():
-        pass
+        name = "bla"
+        health = 100
