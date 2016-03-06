@@ -8,7 +8,7 @@ class Minion:
 
 	def update(self,*args):
 		if args[0]=="hit":
-			pass
+			self.__health = self.__health - args[1]
 		elif args[0] == "move":
 			self.image.x += args[1][0]
 			self.image.y += args[1][1]
