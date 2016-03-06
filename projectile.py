@@ -1,3 +1,4 @@
+from kivy.uix.image import Image
 class Projectile(object):
 	def __init __(ptype,damage,texture):
 		self.__texture = texture
