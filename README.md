@@ -4,4 +4,4 @@ Ein einfaches PvP-Spiel, bei dem beide Teams Türme bauen können. Diese greifen
 
 Im Moment sind wir noch in den Anfangsphasen. Bald gibts dann mehr.
 
-Wir haben auch eine Wiki.
+Wir haben auch eine [Wiki](https://github.com/CoderDojoPotsdam/Defend/wiki).
