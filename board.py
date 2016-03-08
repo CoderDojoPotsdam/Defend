@@ -1,3 +1,4 @@
 # -*- coding: utf-8 -*-
 class Board(object):
-	pass
+	def init():
+		size = [10,10]
