@@ -21,7 +21,6 @@ def make_maze(w = 16, h = 16):
     s = ""
     for (a, b) in zip(hor, ver):
         s += ''.join(a + ['\n'] + b + ['\n'])
-    print s
 
     out = s.strip().split("\n")
     for i in range(len(out)):
